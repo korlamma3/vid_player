@@ -5,9 +5,32 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('123'),
+    return Scaffold(
+      body: Container(
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          gradient:
+          (
+
+          )
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('asset/image/logo.png'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Video',
+                ),
+                Text(
+                  'Player',
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
